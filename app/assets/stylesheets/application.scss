@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+@import "bootstrap-sprockets";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+@import "animate";
+@import "animations-ie-fix";
+@import "fontawesome-all.min.css";
+@import "style";
+@import "swiper.min.css";
+
+
+

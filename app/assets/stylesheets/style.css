@@ -525,7 +525,7 @@ blockquote {
   .home-page .swiper-slide .title {
     font-size: 24px;
     font-weight: 300;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase; }
     @media (min-width: 767px) {
       .home-page .swiper-slide .title {
