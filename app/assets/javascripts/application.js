@@ -10,7 +10,18 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-
+//= require jquery
 //= require rails-ujs
+//= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+import('./acos.jquery.js');
+import('./isotope.min.js');
+import('./modernizr-custom.js');
+import('./script.js');
+import('./swiper.jquery.min.js');
+import('.bootstrap/bootstrap.bundle.js');
+import('.bootstrap/bootstrap.min.js');
+import('.bootstrap/bootstrap.js');
+import('.bootstrap/bootstrap.min.js');
