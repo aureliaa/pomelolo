@@ -1,1 +1,62 @@
-hello hello
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-12">
+        <article class="content">
+          <section class="mb-5">
+          <h2 class="py-2">Participer au pop up event Pomelo</h2>
+          <p>1. Tu t'inscris via le formulaire. </p>
+          <p>2. Tu seras ensuite rédirigée vers une page où tu pourras choisir ton créneau pour le weekend du 10-11 mars sur Paris.</p>
+          <p style="text-align:center">Pomé-lo-lo<br><img src="http://res.cloudinary.com/dl3nkexul/image/upload/c_scale,w_80/v1517324553/noun_563239_cc_dov0i2.png"></p>
+          <p><strong>Si tu n'es pas sur Paris</strong>: pas de panique, tu peux aussi remplir le formulaire et on viendra faire une séance de fitting directement dans ta ville !</p>
+            <h2 class="py-2">Inscription à l'événement de fitting:</h2>
+
+
+            <div name="contact_form" id="contact_form" class="form-horizontal">
+            <%= form_for @customer, url: customers_path, url: customers_path, method: :get do |f| %>
+              <div class="form-group row">
+                <p>Quelle est la marque de ton soutien-gorge préféré ?</p>
+                <div class="col-sm-10 animated-form-control">
+                    <%= f.text_field :brand, class: 'text form-control' %>
+                    </div>
+              </div>
+              <div class="form-group row">
+                <p>Quelle est la taille de ce soutien-gorge ?</p>
+                <div class="col-sm-10 animated-form-control">
+                  <%= f.text_field :size, class: 'text form-control' %>
+                </div>
+              </div>
+              <div class="form-group row">
+                 <p>Penses-tu que c'est la taille qui te va ?</p>
+                <div class="col-sm-10 animated-form-control">
+                  <%= f.radio_button(:right_size, "Oui")%>
+                  <%= label_tag("Oui") %>
+                  <%= f.radio_button(:right_size, "Non") %>
+                  <%= label_tag("Non") %>
+                </div>
+              </div>
+              <div class="form-group row">
+                 <p>De quelle ville viens-tu ?</p>
+                <div class="col-sm-10 animated-form-control">
+                 <%= f.text_field :city, class: 'text form-control' %>
+                </div>
+              </div>
+              <div class="form-group row">
+                 <p>Ton email :</p>
+                <div class="col-sm-10 animated-form-control">
+                  <%= f.email_field :email, class: 'text form-control' %>
+                </div>
+              </div>
+              <div class="form-group row">
+                <br>
+                <div class="col-12">
+                <%= f.submit "Prendre rendez-vous", id: 'submit_btn', class: 'btn btn-primary float-right' %>
+                <% end %>
+                </div>
+              </div>
+            </form>
+            <p style="text-align: center"><img src="http://res.cloudinary.com/dl3nkexul/image/upload/v1517383380/giphy_20_q9xlcg.gif"></p>
+          </section>
+        </article>
+      </div>
+    </div>
+  </div>
